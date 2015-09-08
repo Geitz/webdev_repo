@@ -12,6 +12,6 @@ $databaseConfig = array(
 	"database" => 'SS_mysite',
 	"path" => '',
 );
-
+//MandrillMailer::setAsMailer(MANDRILL_API_KEY);
 // Set the site locale
 i18n::set_locale('fr_FR');

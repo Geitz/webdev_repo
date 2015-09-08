@@ -3,8 +3,9 @@
 	<article>
 		<h1>$Title</h1>
 		<div class="content">
-		$Content</div>
+		$Content
+		</div>
+		$Form 
 	</article>
-		$Form
-		$CommentsForm
+		
 </div>
