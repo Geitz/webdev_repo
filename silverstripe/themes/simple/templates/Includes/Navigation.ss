@@ -1,11 +1,8 @@
 <nav class="primary">
-	<span class="nav-open-button">²</span>
-	<ul>
-    		<% loop $Menu(1) %>      
-        		<li class="$LinkingMode">
-            		<a href="$Link" title="$Title.XML">'MenuTitle' : $MenuTitle.XML</a>
-        		</li>
-    		<% end_loop %>
-		
-	</ul>
+	<div class="navItem">
+		<a href="#">Acceuil</a>
+	</div>
+	<div class="navItem">
+		<a href="#">Qui Sommes Nous ?</a>
+	</div>
 </nav>
