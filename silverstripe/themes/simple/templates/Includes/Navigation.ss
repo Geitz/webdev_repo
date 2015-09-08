@@ -1,8 +1,8 @@
 <nav class="primary">
 	<div class="navItem">
-		<a href="#">Acceuil</a>
+		<a href="$BaseHref">Acceuil</a>
 	</div>
 	<div class="navItem">
-		<a href="#">Qui Sommes Nous ?</a>
+		<a href="{$BaseHref}contactez-nous">Qui Sommes Nous ?</a>
 	</div>
 </nav>

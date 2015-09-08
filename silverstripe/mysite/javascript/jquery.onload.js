@@ -28,8 +28,19 @@
 			footvar = $(document).height()  - $(".footer").height();
 			$(".contactForm").css("top", mVar + "px");
 			$(".main").height(footvar - mVar - 60);
-		});
+			$(".mapContainer").height($(".main").height());
+			$(".contactForm").height($(".main").height() - 70);
+			$("#map").height($(".main").height());		});
 
+		$(window).resize(function() {
+			mVar = $(".header").height() + 15;
+			footvar = $(document).height()  - $(".footer").height();
+			$(".contactForm").css("top", mVar + "px");
+			$(".main").height(footvar - mVar - 60);
+			$(".mapContainer").height($(".main").height());
+			$(".contactForm").height($(".main").height() - 70);
+			$("#map").height($(".main").height());
+		});
 
 		/*
 
