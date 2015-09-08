@@ -1,7 +1,21 @@
 <?php
 
 class ContactPage extends Page {
+    private static $db = array(
+        'Addresse' => 'Text',
+        'Mailaddr' => 'Text',
+        'Telephone' => 'Text'
+    );
 
+     public function getCMSFields() {
+        $fields = parent::getCMSFields();
+
+        $fields->addFieldToTab('Root.Main', new TextField('Addresse'), 'Content');
+        $fields->addFieldToTab('Root.Main', new TextField('Mailaddr'), 'Content');
+        $fields->addFieldToTab('Root.Main', new TextField('Telephone'), 'Content');
+
+        return $fields;
+    }
 }
 
 class ContactPage_Controller extends Page_Controller {
@@ -12,9 +26,13 @@ class ContactPage_Controller extends Page_Controller {
             new EmailField('Email'), 
             new TextareaField('Message')
         ); 
+        
+        
         $actions = new FieldList( 
             new FormAction('submit', 'Submit') 
         ); 
+
+
         return new Form($this, 'Form', $fields, $actions); 
     }
 

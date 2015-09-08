@@ -1,1 +1,1 @@
-<textarea $AttributesHTML>$Value</textarea>
+<textarea $AttributesHTML Placeholder="$Name">$Value</textarea>

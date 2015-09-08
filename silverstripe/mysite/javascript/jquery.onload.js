@@ -25,7 +25,9 @@
 
 		$(document).ready(function() {
 			mVar = $(".header").height() + 15;
+			footvar = $(document).height()  - $(".footer").height();
 			$(".contactForm").css("top", mVar + "px");
+			$(".main").height(footvar - mVar - 60);
 		});
 
 
